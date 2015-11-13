@@ -86,6 +86,7 @@ public class Runner {
         // End game
         System.out.println("Thanks for playing!");
     }
+
     // Second game loop query
     public void goAgain() {
         go = false;
@@ -103,6 +104,7 @@ public class Runner {
             }
         } while(!go);
     }
+
     // Set up game
     public void setup() {
         boolean custom = false;
@@ -205,6 +207,7 @@ public class Runner {
             auto = new AIMover(gameType,debug);
         }
     }
+
     // Call position
     public int[] position (int p) {
         int[] pos = {3,3};

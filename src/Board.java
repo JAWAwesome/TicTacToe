@@ -17,19 +17,24 @@ public class Board {
     private int getp1S() {
         return p1S;
     }
+
     private int getp2S() {
         return p2S;
     }
+
     public int getup() {
         return num.nextInt(2);
     }
+
     public void clear() {
         grid[0][0]=grid[0][1]=grid[0][2]=grid[1][0]=grid[1][1]=grid[1][2]=grid[2][0]=grid[2][1]=grid[2][2]=0;
         moves = 0;
     }
+
     public int[][] getGrid() {
         return grid;
     }
+
     public void setPlayers(char setp1, char setp2, char setbk) {
         p1 = setp1; p2 = setp2; bk = setbk;
     }
